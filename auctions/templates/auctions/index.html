@@ -2,6 +2,18 @@
 
 {% block body %}
     <h2>Active Listings</h2>
+ 
+    <ul>
+        {% for listing in listings %}
 
-    TODO
+        <li>  {{ listing.listing_name }}: Price ${{ listing.listing_price}} </li>
+
+        {% endfor%}
+    </ul>
+ 
+   
+ 
+       
+  
+
 {% endblock %}
